@@ -1,0 +1,11 @@
+step1. weibo-search-master/weibo/settings.py中修改cookies（若失效）
+
+step2. 清空weibo-search-master/crawls/search/下的所有文件，清空weibo-search-master/结果文件/的文件（之前爬的别的关键词的微博记得保存到别处）
+
+step3. 打开终端，依次运行下列命令：
+
+（1）定位到该文件夹（改成自己本地的路径）：cd /Users/zhugehuiming/Desktop/weibo-search-master
+
+（2）激活虚拟环境：source venv/bin/activate
+
+（3）运行代码：./run.sh 0 20  （0-20代表从0个tag开始，到第20个tag结束，可替换为自己想要爬的区间，注意：1.热搜命名为tags.csv，放在weibo-search-master下；2.tags.csv第一列为序号从0开始按顺序排，第二列为tag）
